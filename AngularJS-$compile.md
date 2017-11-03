@@ -143,7 +143,7 @@ angular.module('app').directive('addMouseover', function($compile) {
         scope.$apply('showHint = !showHint');
       });
 
-      attrs.$set('addMouseover', null); // 阻止编译循环编译
+      attrs.$set('addMouseover', null); // 阻止循环编译
       element.append(newEl);
       $compile(element)(scope); // 进行二次编译
     }
