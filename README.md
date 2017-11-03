@@ -98,7 +98,7 @@ $http({
 ```javascript
 angular.module("demo", []).factory("demoCache", ['$cacheFactory', function($cacheFactory){  //生成$cacheFactory实例
 	return $cacheFactory("demoCache", {capacity: 20});
-}]).controller("demoCtrl" ,['$scope', 'demoCache', function($scope, demoCache) {
+}]).controller("demoCtrl" ,['$scope', '$http', 'demoCache', function($scope, $http, demoCache) {
 	$http.get(url, {cache: demoCache}).success(function(response){  //使用$cacheFactory实例缓存数据，再次请求相同url时会读取缓存数据
 				
 	}).error(function(){
