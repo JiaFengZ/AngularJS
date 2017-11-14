@@ -3,14 +3,14 @@ AngularJs 至 $parse 小记
 # $parse 的 api 用法
 `$parse(experssion) `
   arguments: 
-  	`experssion`:需要被编译的 AngularJS 表达式 
-  return: 
-	`function(context, locals)` 
-	 	`context[object]`:编译解析 AngularJS 表达式的上下文对象，比如 $scope; 
-	 	`locals[object]`:本地变量，覆盖 context 上下文对象中的同名变量; 
-  返回的函数还可以具有以下三个属性： 
-  	`literal[boolean]`:被编译的 Angular 表达式的顶节点是否是一个 javascript 字面量; 
-  	`constant[boolean]`:被编译的 Angular 表达式是否全部由常量字面量组成; 
+  	`experssion`:需要被编译的 AngularJS 表达式   
+  return:   
+	`function(context, locals)`   
+	 	`context[object]`:编译解析 AngularJS 表达式的上下文对象，比如 $scope;   
+	 	`locals[object]`:本地变量，覆盖 context 上下文对象中的同名变量;   
+  返回的函数还可以具有以下三个属性：   
+  	`literal[boolean]`:被编译的 Angular 表达式的顶节点是否是一个 javascript 字面量;   
+  	`constant[boolean]`:被编译的 Angular 表达式是否全部由常量字面量组成;   
   	`assign[func(context, local)]`:如果返回的函数assignable,则具有该属性，可在给定的上下文中再次修改表达式的值 
 
 # 手动解析一个 AngularJS 表达式
