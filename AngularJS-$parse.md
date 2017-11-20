@@ -1,4 +1,4 @@
-AngularJs 至 $parse 小记
+AngularJs 之 $parse 小记
 
 # $parse 的 api 用法
 `$parse(experssion) `
