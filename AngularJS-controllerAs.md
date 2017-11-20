@@ -133,7 +133,7 @@ angular
 });
 ```
 ```html
-<!-- good.html -->
+<!-- goods.html -->
 <div>{{good.name}}</div>
 ```
 
