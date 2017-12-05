@@ -77,7 +77,7 @@ angular.module('app')
 *@param {string} topId 根节点的父id标识
 *@return {array} 返回的树形结构数据
 */
-function (data, keys, topId) {
+function generateTreeData(data, keys, topId) {
 			    	
 	var treeData = {$id: topId, sub: []};			    	
 	var getSub = function (parent, data) {
