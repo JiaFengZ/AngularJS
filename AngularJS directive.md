@@ -15,10 +15,10 @@ angula.module('app.directive', []).directive('directiveName', function() {
 
 ## restrict
 指定指令的的声明类型，可选值如下：  
-  1、'E': 元素  <directiveName></directiveName>  
-  2、'A'：属性  <div directiveName="expression"></div>  
-  3、'C': class 类  <div class="directiveName"></div>  
-  4、'M': 注释  <!--directive:directiveName expression--> 
+  1、'E': 元素  `<directiveName></directiveName>`  
+  2、'A'：属性  `<div directiveName="expression"></div> `  
+  3、'C': class 类  `<div class="directiveName"></div> `  
+  4、'M': 注释  `<!--directive:directiveName expression--> `
 
 # scope
  1、false: 默认值，继承父级作用域，不创建自己的作用域  
