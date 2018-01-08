@@ -113,7 +113,7 @@ angular.module("demo", []).factory("demoCache", ['$cacheFactory', function($cach
 var p1 = $http.get(url1);
 var p2 = $http.get(url2);
 
-var task = $q.all[p1, p2];
+var task = $q.all([p1, p2]);
 task.then(function(res) {   //p1和p2都执行完后，才会执行task.then()里面的方法
 	console.log(res[0]);
 	console.log(res[1]);
