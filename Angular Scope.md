@@ -4,8 +4,8 @@ Scope 是持有应用模型(model)引用的一个对象，是一个可执行的�
 
 ## Scope 的特点
 
-- Scopes 提供 APIs($watch) 来监听 model 的改变。
-- Scopes 提供 APIs($apply) 把在 Angular 执行环境之外引起的 model的改变更新到视图(view)。
+- Scopes 提供 API($watch) 来监听 model 的改变。
+- Scopes 提供 API($apply) 把在 Angular 执行环境之外引起的 model的改变更新到视图(view)。
 - Scopes 通过层级嵌套的方式实现 model 属性的访问和继承共享。嵌套的 scopes 要么是子 scope，要么是独立隔离的 scope，普通的子 scope 继承它的父 scope 的属性，独立隔离的 scope 不会继承父域的属性。
 - Scopes 为 angular 表达式提供执行的上下文环境。例如 `{{username}}` 脱离作用域是没有意义的，只有在一个特定的 scope 中定义了 `username` 属性，这个表达式才会有相应的值。
 
