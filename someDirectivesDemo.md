@@ -194,7 +194,7 @@ module.directive('scrollTrigger', function() {
 	              	return;
 	            }
 
-	            if (($(window).scrollTop() + $(window).height()) > ($element.offset().top + $element.height() + 5)) {
+	            if (scrollEle.scrollTop() + parseInt($attrs.offset) >= $element[0].offsetTop && scrollEle.scrollTop() - parseInt($attrs.offset) < $element[0].offsetTop + $element[0].offsetHeight) {
 	            	if (preScrollTop > scrollEle.scrollTop()) {//上滚
 	            		$scope.$eval($attrs.zScrollTriggerUp); //向上滚动到该元素触发事件
 	            	} else if (preScrollTop < scrollEle.scrollTop()) {//下滚
@@ -216,7 +216,7 @@ module.directive('scrollTrigger', function() {
 ```html
 <div id="ele-scroll"><!-- 滚动的元素 -->
 	<div></div>
-	<div scroll-trigger="ele-scroll" z-scroll-trigger="scroll()" z-scroll-trigger-up="scrollUp()" z-scroll-trigger-down="scrollDown()"></div>
+	<div scroll-trigger="ele-scroll" offset="20" z-scroll-trigger="scroll()" z-scroll-trigger-up="scrollUp()" z-scroll-trigger-down="scrollDown()"></div>
 	<div></div>
 </div>
 ```
