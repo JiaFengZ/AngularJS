@@ -12,3 +12,4 @@
 [10. Angular 自定义指令配置](https://github.com/JiaFengZ/AngularJS/blob/master/AngularJS%20directive.md)  
 [11. Angular 的 $controller 和 $injector](https://github.com/JiaFengZ/AngularJS/blob/master/AngularJs-%24controller%26%24injector.md)  
 [12. 使用Angular编写的几个增强页面易用性的指令](https://github.com/JiaFengZ/AngularJS/blob/master/someDirectivesDemo.md)
+[13. 使用 component 改造 angularjs 应用](https://github.com/JiaFengZ/AngularJS/blob/master/component.md)
